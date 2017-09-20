@@ -13,7 +13,6 @@ classes:
 - system.salt.master.api
 - system.reclass.storage.salt
 - system.xtrabackup.server.single
-- system.reclass.storage.system.openstack_gateway_cluster
 - system.reclass.storage.system.openstack_control_single
 - cluster.mcp_ovn.infra
 parameters:
