@@ -37,18 +37,6 @@ classes:
 - system.mysql.client
 - cluster.mcp_ovn.infra
 parameters:
-  _param:
-    keepalived_vip_interface: ens3
-    keepalived_vip_virtual_router_id: 50
-    cluster_vip_address: ${_param:openstack_control_address}
-    cluster_local_address: ${_param:single_address}
-    cluster_node01_hostname: ${_param:openstack_control_node01_hostname}
-    cluster_node01_address: ${_param:openstack_control_node01_address}
-    cluster_node02_hostname: ${_param:openstack_control_node02_hostname}
-    cluster_node02_address: ${_param:openstack_control_node02_address}
-    cluster_node03_hostname: ${_param:openstack_control_node03_hostname}
-    cluster_node03_address: ${_param:openstack_control_node03_address}
-    nova_vncproxy_url: https://${_param:cluster_public_host}:6080
   mysql:
     server:
       version: '5.6'
@@ -57,3 +45,13 @@ parameters:
     network:
       interface:
         ens3: ${_param:linux_single_interface}
+
+  nova:
+    controller:
+      metadata:
+        password: ${_param:metadata_password}
+      bind:
+        private_address: ${_param:cluster_local_address}
+        public_address: ${_param:openstack_control_node01_address}
+        novncproxy_port: 6080
+      vncproxy_url: http://${_param:openstack_control_node01_address}:6080
