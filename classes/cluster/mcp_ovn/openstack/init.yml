@@ -17,7 +17,7 @@ parameters:
     neutron_gateway_agent_mode: legacy
     neutron_compute_agent_mode: legacy
 
-    neutron_l3_ha: True
+    neutron_l3_ha: False
     neutron_tenant_network_types: "flat,vxlan"
 
     galera_server_cluster_name: openstack_cluster
@@ -83,6 +83,7 @@ parameters:
     openstack_notification_topics: "notifications,${_param:stacklight_notification_topic}"
 
     # openstack service addresses
+    #TODO
     openstack_proxy_address: 10.167.4.80
     openstack_proxy_node01_address: 10.167.4.81
     openstack_proxy_node02_address: 10.167.4.82
