@@ -14,7 +14,7 @@ classes:
 - system.reclass.storage.salt
 - system.xtrabackup.server.single
 - system.reclass.storage.system.openstack_gateway_cluster
-- system.reclass.storage.system.openstack_control_cluster
+- system.reclass.storage.system.openstack_control_single
 - cluster.mcp_ovn.infra
 parameters:
   _param:
@@ -36,12 +36,6 @@ parameters:
             mysql_cluster_role: master
           classes:
           - cluster.${_param:cluster_name}.openstack.control_init
-        openstack_control_node02:
-          params:
-            linux_system_codename: xenial
-        openstack_control_node03:
-          params:
-            linux_system_codename: xenial
         openstack_compute_rack01:
           name: ${_param:openstack_compute_rack01_hostname}<<count>>
           domain: ${_param:cluster_domain}

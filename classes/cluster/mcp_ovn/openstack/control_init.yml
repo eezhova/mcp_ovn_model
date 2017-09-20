@@ -14,4 +14,3 @@ classes:
 - system.keystone.client.service.glare
 - system.keystone.client.service.cinder3
 - system.keystone.client.service.keystone
-- service.galera.master.cluster
