@@ -1,6 +1,6 @@
 classes:
 - system.linux.system.repo.mcp.extra
-- cluster.deployment_name.infra
+- cluster.mcp_ovn.infra
 parameters:
   linux:
     network:

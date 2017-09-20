@@ -1,7 +1,7 @@
 classes:
 - system.horizon.server.single
 #- system.horizon.server.plugin.theme
-- cluster.deployment_name.infra
+- cluster.mcp_ovn.infra
 parameters:
   _param:
     horizon_site_branding: OpenStack Dashboard

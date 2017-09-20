@@ -6,7 +6,7 @@ classes:
 - system.linux.system.repo.sensu
 - system.neutron.gateway.cluster
 - system.neutron.gateway.notification.messagingv2
-- cluster.deployment_name.infra
+- cluster.mcp_ovn.infra
 parameters:
   _param:
     interface_mtu: 1500

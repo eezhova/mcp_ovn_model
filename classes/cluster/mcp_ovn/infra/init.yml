@@ -1,18 +1,12 @@
 
 classes:
 - system.linux.system.single
-#- system.openssh.server.team.lab
-#- system.openssh.server.team.support
-#- system.openssh.server.team.presales
-#- system.openssh.server.team.services
-#- system.openssh.server.team.networking
-#- system.openssh.server.team.stacklight
-#- system.openssh.server.team.mmo_devops
+- system.openssh.server.team.networking
 - system.rsyslog.client.single
-- cluster.deployment_name.openstack
-- cluster.deployment_name.stacklight
-- cluster.deployment_name.stacklight.client
-- cluster.deployment_name.cicd
+- cluster.mcp_ovn.openstack
+- cluster.mcp_ovn.stacklight
+- cluster.mcp_ovn.stacklight.client
+- cluster.mcp_ovn.cicd
 parameters:
   _param:
     # TODO: Uncomment next line "linux_system_user_sudo: true" during the deployment.
@@ -27,7 +21,7 @@ parameters:
     infra_config_deploy_address: 10.167.5.15
 
     cluster_domain: deploy-name.local
-    cluster_name: deployment_name
+    cluster_name: mcp_ovn
     cluster_public_host: ${_param:openstack_proxy_address}
 
     control_network_netmask: 255.255.255.0
