@@ -9,9 +9,9 @@ classes:
 parameters:
   _param:
     nova_vncproxy_url: https://${_param:cluster_public_host}:6080
-    primary_interface: eth1
-    tenant_interface: eth2
-    external_interface: eth3
+    primary_interface: enp0s3
+    tenant_interface: enp0s4
+    external_interface: enp0s3
     control_address: ${_param:openstack_control_address}
   nova:
     compute:

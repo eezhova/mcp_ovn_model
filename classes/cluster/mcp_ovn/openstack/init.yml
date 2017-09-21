@@ -69,11 +69,11 @@ parameters:
     openstack_notification_topics: "notifications"
 
     # openstack service addresses
-    openstack_control_node01_address: 10.167.4.11
+    openstack_control_node01_address: 10.158.2.3
 
     # OpenStack Compute
-    openstack_compute_rack01_single_subnet: 10.167.4
-    openstack_compute_rack01_tenant_subnet: 10.167.6
+    openstack_compute_rack01_single_subnet: 10.158.2
+    openstack_compute_rack01_tenant_subnet: 10.158.3
     openstack_compute_rack01_hostname: cmp
 
     # openstack service hostnames
