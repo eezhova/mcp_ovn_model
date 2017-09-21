@@ -20,7 +20,7 @@ parameters:
     neutron_compute_agent_mode: legacy
 
     neutron_l3_ha: False
-    neutron_tenant_network_types: "flat,vxlan"
+    neutron_tenant_network_types: "geneve,flat,vxlan"
 
     galera_server_cluster_name: openstack_cluster
     galera_server_maintenance_password: llllllllllllllll
