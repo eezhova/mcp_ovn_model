@@ -3,7 +3,6 @@ classes:
 - system.linux.system.repo.mcp.extra
 - system.linux.system.repo.mcp.openstack
 - system.linux.system.repo.saltstack.xenial
-- system.linux.system.repo.glusterfs
 - system.linux.system.repo.sensu
 - system.memcached.server.single
 - system.neutron.control.openvswitch.single
@@ -22,9 +21,6 @@ classes:
 - system.heat.server.notification.messagingv2
 - system.haproxy.proxy.listen.openstack.nova-placement
 - system.haproxy.proxy.listen.openstack.glare
-- system.glusterfs.client.single
-- system.glusterfs.client.volume.glance
-- system.glusterfs.client.volume.keystone
 - system.rabbitmq.server.single
 - system.rabbitmq.server.vhost.openstack
 - system.mysql.client.database.keystone
