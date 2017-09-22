@@ -34,15 +34,10 @@ parameters:
     heat_domain_admin_password: llllllllllllllll
     cinder_version: ${_param:openstack_version}
     cinder_service_host: ${_param:openstack_control_node01_address}
-    ceilometer_version: ${_param:openstack_version}
-    ceilometer_service_host: ${_param:openstack_telemetry_address}
-    ceilometer_influxdb_password: llllllllllllllll
     nova_version: ${_param:openstack_version}
     nova_service_host: ${_param:openstack_control_node01_address}
     neutron_version: ${_param:openstack_version}
     neutron_service_host: ${_param:openstack_control_node01_address}
-    aodh_version: ${_param:openstack_version}
-    aodh_service_host: ${_param:openstack_telemetry_address}
 
     mysql_admin_user: root
     mysql_aodh_password: llllllllllllllll
