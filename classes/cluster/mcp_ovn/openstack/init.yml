@@ -26,21 +26,21 @@ parameters:
     rabbitmq_admin_password: llllllllllllllll
     rabbitmq_openstack_password: llllllllllllllll
     glance_version: ${_param:openstack_version}
-    glance_service_host: ${_param:openstack_control_address}
+    glance_service_host: ${_param:openstack_control_node01_address}
     keystone_version: ${_param:openstack_version}
-    keystone_service_host: ${_param:openstack_control_address}
+    keystone_service_host: ${_param:openstack_control_node01_address}
     heat_version: ${_param:openstack_version}
-    heat_service_host: ${_param:openstack_control_address}
+    heat_service_host: ${_param:openstack_control_node01_address}
     heat_domain_admin_password: llllllllllllllll
     cinder_version: ${_param:openstack_version}
-    cinder_service_host: ${_param:openstack_control_address}
+    cinder_service_host: ${_param:openstack_control_node01_address}
     ceilometer_version: ${_param:openstack_version}
     ceilometer_service_host: ${_param:openstack_telemetry_address}
     ceilometer_influxdb_password: llllllllllllllll
     nova_version: ${_param:openstack_version}
-    nova_service_host: ${_param:openstack_control_address}
+    nova_service_host: ${_param:openstack_control_node01_address}
     neutron_version: ${_param:openstack_version}
-    neutron_service_host: ${_param:openstack_control_address}
+    neutron_service_host: ${_param:openstack_control_node01_address}
     glusterfs_service_host: ${_param:infra_kvm_address}
     aodh_version: ${_param:openstack_version}
     aodh_service_host: ${_param:openstack_telemetry_address}
