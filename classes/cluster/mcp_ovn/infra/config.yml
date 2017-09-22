@@ -6,7 +6,7 @@ classes:
 - system.linux.system.repo.glusterfs
 - system.linux.system.repo.sensu
 - system.openssh.client.lab
-- system.glusterfs.client.cluster
+- system.glusterfs.client.single
 - system.glusterfs.client.volume.salt_pki
 - system.salt.master.pkg
 - system.salt.minion.ca.salt_master
