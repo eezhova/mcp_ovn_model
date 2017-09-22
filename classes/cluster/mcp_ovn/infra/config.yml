@@ -12,7 +12,6 @@ classes:
 - system.salt.minion.ca.salt_master
 - system.salt.master.api
 - system.reclass.storage.salt
-- system.xtrabackup.server.single
 - system.reclass.storage.system.openstack_control_single
 - cluster.mcp_ovn.infra
 parameters:
