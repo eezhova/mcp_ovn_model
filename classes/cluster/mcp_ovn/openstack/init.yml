@@ -65,6 +65,8 @@ parameters:
 
     cluster_vip_address: ${_param:openstack_control_node01_address}
     cluster_local_address: ${_param:single_address}
+    cluster_node01_hostname: ctl01
+    cluster_node01_address: ${_param:openstack_control_node01_address}
 
     # openstack service addresses
     openstack_control_node01_address: 10.158.2.3
